@@ -228,7 +228,7 @@ router.get('/google/callback',
       res.redirect(`${process.env.CLIENT_URL}/auth/callback?token=${token}`);
     } catch (error) {
       console.error('Google callback error:', error);
-      res.redirect(`${process.env.CLIENT_URL}/login?error=auth_failed`);
+      res.redirect(`https://ecommercefrontend-ycuh.vercel.app/login?error=auth_failed`);
     }
   }
 );
